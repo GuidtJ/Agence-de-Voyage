@@ -1,0 +1,308 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+ }
+ body{
+    width : 100%;
+    background-image: url(../img/fond1.jpg);
+    /* background-repeat:no-repeat; */
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh; 
+ }
+/* Accueil */
+/* Header */
+.hautDePage{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hautDePage>div{
+    border: 1px;
+    background-color: #3F3C37 ;
+    border-radius: 50px;
+    width: 90%;
+    height: 80px;
+    flex-direction: row;
+    text-align: center;
+    color: #DCD9CD;
+    font-size: 50px;
+}
+/* Navigateur */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li{
+    margin-top: 1em;
+    border: 1px;
+    background-color: #625E55;
+    border-radius: 30px;
+}
+.nav-link{
+    color:#DCD9CD ;
+}
+.nav-link:hover{
+    color: black;
+}
+/* section */
+.menu{
+    display: flex;
+}
+.fond{
+    display: flex;
+    max-width: 20%;
+    max-height: 10%;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.fond2{
+    display: flex;
+    max-width: 20%;
+    max-height: 10%;
+    padding: 5px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.fond3{
+    display: flex;
+    max-width: 20%;
+    max-height: 10%;
+    padding: 0;
+    padding-top: 5px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/* Accueil Fin */
+/* Gallerie */
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+.galerie{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+    margin-top: 15px;
+    /* background: #625E55; */
+}
+.item{
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+}
+.item img{
+    width: 100%;
+    height: auto;
+    /* border-radius: 30px; */
+}
+.carteGal{
+    box-shadow: 2px 2px 2px black;
+    margin: 4px;
+
+}
+.move{
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(180deg);
+    transition: 0.3s;
+}
+.card:hover .move{
+    transform: scale(1);
+}
+figcaption{
+    text-align: center;
+}
+/* Equipe */
+.equipe{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1500px;
+    margin: 70px auto 0;
+    margin-top: 5%;
+    /* background: #625E55; */
+}
+.item1{
+    width: 300px;
+    height: 280px;
+    margin: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+}
+.item1 img{
+    width: 100%;
+    height: 280px;
+    border-radius: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.carteEquipe{
+    box-shadow: 2px 2px 2px black;
+    margin: 4px;
+    border-radius: 100%;
+    background-color: #3F3C37;
+
+}
+.move1{
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    transform: scale(0) ;
+    transition: 0.3s;
+    transform-origin: bottom;
+}
+.card:hover .move1{
+    transform: scale(1);
+}
+/* Equipe Fin */
+/* Staff */
+h3{
+    text-align: center;
+}
+.card-color{
+    background: #3F3C37;
+    color: #DCD9CD;
+}
+.cardflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.photoContour{
+    border: 5px solid black;
+}
+/* Contact*/
+h2{
+    text-align: center;
+}
+.contactCol{
+    background: url(../img/pexels-asad-photo-maldives-1450363\ \(1\).jpg); 
+    border-radius: 10px;
+    color: #DCD9CD;
+    border: 5px solid black;
+    
+}
+
+/* media queries */
+@media (max-width: 1024px){
+    .menu{
+        flex-direction: row;
+        height: auto;
+    }
+    .card{
+        text-align: justify;
+        height: 100%;
+    }
+    .fond{
+        max-width: 26%;
+        max-height: 9%;
+    }
+    .fond2{
+        max-width: 28%;
+        max-height: 8%;
+    }
+    .fond3{
+        max-width: 29%;
+        max-height: 8%;
+    }
+    /* fiche-Staff */  
+    .cardflex{
+        width: 50%;
+        
+    }
+
+}
+@media  (max-width:576px) {
+    span{
+         display: none;
+        
+    }
+    .responsiveAccueil :nth-child(1){
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .responsiveAccueil :nth-child(2){
+        width: 100%;
+    }
+    .responsiveAccueil :nth-child(3){
+        width: 100%;
+    }
+    nav{
+        margin-top:10%;
+    }
+    .card{
+        text-align:start;
+    }
+    .fond{
+        max-width: 17%;
+        max-height: 10%;
+    }
+    .fond2{
+        max-width: 18%;
+        max-height: 8%;
+    }
+    .fond3{
+        max-width: 18%;
+        max-height: 8%;
+    }
+    /* accueil fin */
+    /* Galerie */
+    .carteGal{
+        width: 100%;
+        height: 250px;
+        align-items: center;
+    }
+    .item{
+        width: 90%;
+        height: 250px;
+    }
+    .responsiveSize{
+        font-size: 40px;
+    }
+/* fiche-Staff */  
+    .cardflex{
+        width: 80%;
+    }
+}
+
